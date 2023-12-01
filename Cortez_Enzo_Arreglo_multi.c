@@ -29,3 +29,18 @@ int main() {
             }
         }
     }
+
+    /* Impresión de matrices */
+    for (int k = 0; k < l; k++) {
+        printf("Matriz %d:\n", k + 1);
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                printf("%d ", matrizA[k][i][j]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
