@@ -14,4 +14,18 @@ int main() {
     printf("Ingrese el numero de columnas: ");
     scanf("%d", &n);
 
-    
+    /* Definir las matrices */
+    int matrizA[l][m][n];
+
+    /* Inicialización de la matriz */
+    for (int k = 0; k < l; k++) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (k == l - 1) {
+                    matrizA[k][i][j] = 1; // Última matriz llena de unos
+                } else {
+                    matrizA[k][i][j] = 0; // Resto de matrices llenas de ceros
+                }
+            }
+        }
+    }
